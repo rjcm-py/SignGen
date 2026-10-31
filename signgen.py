@@ -30,4 +30,4 @@ with column_1:
 with column_2:
     st.title("Preview", width='stretch')
     with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
-        st.pdf("report.pdf", alt="Q3 2026 financial report")
+        st.pdf("", alt="Q3 2026 financial report")
