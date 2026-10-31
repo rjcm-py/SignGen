@@ -1,4 +1,13 @@
 import streamlit as st
+from pathlib import Path
+
+app_dir = Path(__file__).parent
+
+st.set_page_config(
+    page_title="SignGen",
+    page_icon="🚀", # Accepts emojis or file paths
+    layout="wide"
+)
 
 st.title("SignGen")
 
