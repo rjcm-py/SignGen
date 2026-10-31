@@ -29,4 +29,4 @@ with column_1:
 with column_2:
     st.title("Preview", width='stretch')
     with st.container(border=1, key=None, width="stretch", height=700, horizontal=False, wrap=True, horizontal_alignment="center", vertical_alignment="top", gap="small", autoscroll=None):
-        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height='stretch')
+        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height=300)
