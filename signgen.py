@@ -11,7 +11,7 @@ st.set_page_config(
 
 st.title("SignGen")
 
-column_1, column_2, column_3 = st.columns(3)
+column_1, column_2 = st.columns(2)
 
 with column_1:
     with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
