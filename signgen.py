@@ -28,5 +28,5 @@ with column_1:
         data_set = st.file_uploader('Upload List', type='.csv, .txt', width=500)
 with column_2:
     st.title("Preview", width='stretch')
-    with st.container(border=1, key=None, width="stretch", height=700, horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
-        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height=690)
+    with st.container(border=1, key=None, width="stretch", height=700, horizontal=False, wrap=True, horizontal_alignment="center", vertical_alignment="top", gap="small", autoscroll=None):
+        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height='stretch')
