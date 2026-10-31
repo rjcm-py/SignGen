@@ -25,8 +25,8 @@ with column_1:
                 regular_price = st.text_input('Regular Price', value="")
                 sale_price = st.text_input('Sale Price', value="")
                 save_price = st.text_input('Save Price', value=f'')
-        data_set = st.file_uploader('Upload List', type='.csv, .txt', width=500)
+                st.button("add")
 with column_2:
     st.title("Preview", width='stretch')
     with st.container(border=1, key=None, width="stretch", height=700, horizontal=False, wrap=True, horizontal_alignment="center", vertical_alignment="top", gap="small", autoscroll=None):
-        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height=600)
+        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height=690)
