@@ -13,7 +13,7 @@ column_1, column_2 = st.columns(2)
 
 with column_1:
     st.title("Sign Creation", width='stretch')
-    with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
+    with st.container(border=1, key=None, width="stretch", height=600, horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
         uploaded_file = st.file_uploader("Upload listing...", type='.csv, .txt, .xlsx, .ods', key='upload_list', help="Uploading listing of SKUs", width=600)
         st.text("or", text_alignment='center', width=600)
         promo_option = ['Sale (Price Off)', 'Sale (50% Off)', 'With Free Items', 'B1T1']
@@ -28,5 +28,5 @@ with column_1:
         data_set = st.file_uploader('Upload List', type='.csv, .txt', width=500)
 with column_2:
     st.title("Preview", width='stretch')
-    with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
+    with st.container(border=1, key=None, width="stretch", height=600, horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
         st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height=800)
