@@ -19,7 +19,7 @@ with column_1:
         promo_option = ['Sale (Price Off)', 'Sale (50% Off)', 'With Free Items', 'B1T1']
         promo_type = st.radio("Promo Type", promo_option)   
 
-        with st.container(height=600,width=600):
+        with st.container(height=400,width=600):
             if promo_type == 'Sale (Price Off)':
                 item_description = st.text_input('Item Description', value="" )
                 regular_price = st.text_input('Regular Price', value="")
@@ -29,4 +29,4 @@ with column_1:
 with column_2:
     st.title("Preview", width='stretch')
     with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
-        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report")
+        st.pdf(f"{str(app_dir) + '/assets/HF_priceoff_screamer.pdf'}", alt="Q3 2026 financial report", height='stretch')
