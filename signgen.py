@@ -18,5 +18,6 @@ with column_1:
         uploaded_file = st.file_uploader("Upload listing...", type='.csv, .txt, .xlsx, .ods', key='upload_list', help="Uploading listing of SKUs")
 with column_2:
     st.title("Preview", width='stretch')
-    st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None)
+    with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
+        st.download_button("Download")
 
