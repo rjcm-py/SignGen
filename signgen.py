@@ -16,7 +16,7 @@ column_1, column_2 = st.columns(2)
 with column_1:
     with st.container(border=1, key=None, width="stretch", height="content", horizontal=False, wrap=True, horizontal_alignment="left", vertical_alignment="top", gap="small", autoscroll=None):
         uploaded_file = st.file_uploader("Upload listing...", type='.csv, .txt, .xlsx, .ods', key='upload_list', help="Uploading listing of SKUs", width=600)
-        st.subheader("or", text_alignment='center')
+        st.text("or", text_alignment='center', width=600)
         promo_option = ['Sale (Price Off)', 'Sale (50% Off)', 'With Free Items', 'B1T1']
         promo_type = st.radio("Promo Type", promo_option)   
 
